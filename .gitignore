@@ -1,0 +1,18 @@
+# Exclude all files from the latex build process
+*.aux
+*fdb_latexmk
+*.fls
+*.log#
+*.out
+*.toc
+*.synctex.gz
+
+# Exclude binaries
+mkhomework
+mkhomework.exe
+
+# Exclude vscode
+.vscode
+
+# Exclude OS files
+.DS_Store
