@@ -9,7 +9,20 @@
 \usepackage{amsthm}
 \usepackage{amsfonts}
 \usepackage{tikz}
-\usepackage{hyperref}
+\usepackage[pdftex]{hyperref}
+
+
+% --- Metadata ---
+\newcommand{\hmwkTitle}{Homework \#1}
+\newcommand{\hmwkAuthor}{flofriday}
+\newcommand{\hmwkDueDate}{10.09.2020}
+\newcommand{\hmwkSubject}{Math}
+
+\title{
+    \textmd{\textbf{\hmwkSubject: \hmwkTitle}}
+}
+\author{\hmwkAuthor}
+\date{Abgabedatum: \hmwkDueDate} 
 
 % --- Hyperref Setup ---
 \hypersetup{
@@ -17,6 +30,10 @@
     linkcolor=blue,
     filecolor=magenta,      
     urlcolor=blue,
+    pdftitle={\hmwkTitle},
+    pdfauthor={\hmwkAuthor},
+    pdfsubject={\hmwkSubject},
+    pdfkeywords={\hmwkAuthor;\hmwkSubject;\hmwkTitle}
 }
 
 % --- Page Setup ---
@@ -35,26 +52,17 @@
 
 \graphicspath{ {./} }
 
-% --- Metadata ---
-\newcommand{\hmwkTitle}{Homework \#1}
-\newcommand{\hmwkAuthor}{flofriday}
-\newcommand{\hmwkDueDate}{10.09.2020}
-\newcommand{\hmwkSubject}{Math}
-
-\title{
-    \textmd{\textbf{\hmwkSubject: \hmwkTitle}}
-}
-\author{\hmwkAuthor}
-\date{Abgabedatum: \hmwkDueDate} 
 
 % --- Begin Document ---
 \begin{document}
 
+% - Title Page -
 \maketitle
 \vspace{2cm}
 \tableofcontents
 \pagebreak
 
+% - Problem Pages -
 
 \section*{Problem A}
 \addcontentsline{toc}{section}{Problem A}
