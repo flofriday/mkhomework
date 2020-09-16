@@ -1,6 +1,8 @@
 \documentclass[oneside]{article}
-\usepackage[a4paper, margin=3cm, top=4cm]{geometry}
-\usepackage[ngerman]{babel}
+\usepackage[a4paper, margin=3cm, top=3cm]{geometry}
+\usepackage[naustrian]{babel}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
 \usepackage[parfill]{parskip}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
@@ -8,6 +10,7 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amsfonts}
+\usepackage{sectsty}
 \usepackage{tikz}
 \usepackage[pdftex]{hyperref}
 
@@ -15,11 +18,11 @@
 % --- Metadata ---
 \newcommand{\hmwkTitle}{Homework \#1}
 \newcommand{\hmwkAuthor}{flofriday}
-\newcommand{\hmwkDueDate}{10.09.2020}
+\newcommand{\hmwkDueDate}{16.09.2020}
 \newcommand{\hmwkSubject}{Math}
 
 \title{
-    \textmd{\textbf{\hmwkSubject: \hmwkTitle}}
+    \textsf{\textbf{\hmwkSubject: \hmwkTitle}}
 }
 \author{\hmwkAuthor}
 \date{Abgabedatum: \hmwkDueDate} 
@@ -27,7 +30,7 @@
 % --- Hyperref Setup ---
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
+    linkcolor=black,
     filecolor=magenta,      
     urlcolor=blue,
     pdftitle={\hmwkTitle},
@@ -38,17 +41,24 @@
 
 % --- Page Setup ---
 \linespread{1.1}
+\allsectionsfont{\bfseries\sffamily}
 
 \pagestyle{fancy}
 \lhead{\hmwkAuthor}
 \chead{\hmwkSubject: \hmwkTitle}
 \rhead{\firstxmark}
-\cfoot{\thepage}
-
+\cfoot{Seite \thepage\ von \pageref{LastPage}}
 \renewcommand\headrulewidth{0.4pt}
 \renewcommand\footrulewidth{0.4pt}
-
 \setlength\parindent{0pt}
+
+\fancypagestyle{firststyle}
+{
+   \renewcommand\headrulewidth{0pt}
+   \renewcommand\footrulewidth{0.4pt}
+   \fancyhf{}
+   \cfoot{Seite \thepage\ von \pageref{LastPage}}
+}
 
 \graphicspath{ {./} }
 
@@ -58,43 +68,45 @@
 
 % - Title Page -
 \maketitle
-\vspace{2cm}
-\tableofcontents
-\pagebreak
+\thispagestyle{firststyle}
+\vspace{1cm}
+%\tableofcontents
+%\pagebreak
 
 % - Problem Pages -
 
-\section*{Problem A}
+\subsection*{Problem A}
 \addcontentsline{toc}{section}{Problem A}
 \extramarks{Problem A}\\
 Eine ausführliche Beschreibung des zu lösenden Problemes
 
-\textbf{Lösung}\\
+\textsf{\textbf{Lösung}}\\
 Eine Lösung des Problemes
 
-\section*{Problem B}
+\subsection*{Problem B}
 \addcontentsline{toc}{section}{Problem B}
 \extramarks{Problem B}\\
 Eine ausführliche Beschreibung des zu lösenden Problemes
 
-\textbf{Lösung}\\
+\textsf{\textbf{Lösung}}\\
 Eine Lösung des Problemes
 
-\section*{Problem C}
+\subsection*{Problem C}
 \addcontentsline{toc}{section}{Problem C}
 \extramarks{Problem C}\\
 Eine ausführliche Beschreibung des zu lösenden Problemes
 
-\textbf{Lösung}\\
+\textsf{\textbf{Lösung}}\\
 Eine Lösung des Problemes
 
-\section*{Additional Task}
+\subsection*{Additional Task}
 \addcontentsline{toc}{section}{Additional Task}
 \extramarks{Additional Task}\\
 Eine ausführliche Beschreibung des zu lösenden Problemes
 
-\textbf{Lösung}\\
+\textsf{\textbf{Lösung}}\\
 Eine Lösung des Problemes
 
 
+\label{LastPage}
 \end{document}
