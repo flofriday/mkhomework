@@ -1,0 +1,82 @@
+\documentclass[oneside]{article}
+\usepackage[a4paper, margin=3cm, top=3cm]{geometry}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[parfill]{parskip}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{sectsty}
+\usepackage{tikz}
+\usepackage[pdftex]{hyperref}
+
+
+% --- Metadata ---
+\newcommand{\hmwkTitle}{[[.Title]]}
+\newcommand{\hmwkAuthor}{[[.Author]]}
+\newcommand{\hmwkDueDate}{[[.DueDate]]}
+\newcommand{\hmwkSubject}{[[.Subject]]}
+
+\title{
+    \textsf{\textbf{\hmwkSubject: \hmwkTitle}}
+}
+\author{\hmwkAuthor}
+\date{Abgabedatum: \hmwkDueDate} 
+
+% --- Hyperref Setup ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={\hmwkTitle},
+    pdfauthor={\hmwkAuthor},
+    pdfsubject={\hmwkSubject},
+    pdfkeywords={\hmwkAuthor;\hmwkSubject;\hmwkTitle}
+}
+
+% --- Page Setup ---
+\linespread{1.1}
+\allsectionsfont{\bfseries\sffamily}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthor}
+\chead{\hmwkSubject: \hmwkTitle}
+\rhead{\firstxmark}
+\cfoot{Seite \thepage\ von \pageref{LastPage}}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+\setlength\parindent{0pt}
+
+\fancypagestyle{firststyle}
+{
+   \renewcommand\headrulewidth{0pt}
+   \renewcommand\footrulewidth{0.4pt}
+   \fancyhf{}
+   \cfoot{Page \thepage\ of \pageref{LastPage}}
+}
+
+\graphicspath{ {./} }
+
+
+% --- Begin Document ---
+\begin{document}
+
+% - Title Page -
+\maketitle
+\thispagestyle{firststyle}
+\vspace{1cm}
+
+% - Problem Pages -
+\subsection*{Problem}
+Describe the problem of this task
+
+\subsection*{Solution}
+My Solution for this task
+
+\label{LastPage}
+\end{document}
