@@ -11,9 +11,9 @@ math-de.tmp
 # A simple script to build the template
 mkhomework \
 -subject "Statistics and Probability" \
--title "HW 1 - Task 1" \
+-title "HW 1 - Problem 1" \
 -author flofriday \
 -duedate 06.10.2020 \
--tasks "not used" \
+-tasks "1a), 1b), 1c)" \
 -output examples/ws.tex \
 ws.tmp

@@ -25,7 +25,7 @@
     \textsf{\textbf{\hmwkSubject: \hmwkTitle}}
 }
 \author{\hmwkAuthor}
-\date{Abgabedatum: \hmwkDueDate} 
+\date{Duedate: \hmwkDueDate} 
 
 % --- Hyperref Setup ---
 \hypersetup{
@@ -72,11 +72,16 @@
 \vspace{1cm}
 
 % - Problem Pages -
-\subsection*{Problem}
+[[range .Tasks]]
+\subsection*{Problem [[.]]}
 Describe the problem of this task
 
-\subsection*{Solution}
+%\textsf{\textbf{Solution}}\\
+\subsubsection*{Solution}
 My Solution for this task
+
+\vspace{1cm}
+[[end]]
 
 \label{LastPage}
 \end{document}
