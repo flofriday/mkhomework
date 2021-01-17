@@ -1,8 +1,8 @@
 \documentclass[oneside]{article}
-\usepackage[a4paper, margin=3cm, top=3cm]{geometry}
+\usepackage[a4paper, margin=3cm, top=4cm]{geometry}
 \usepackage[english]{babel}
 \usepackage{lmodern}
-\usepackage[T1]{fontenc}
+\usepackage{fontspec}
 \usepackage[parfill]{parskip}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
@@ -10,13 +10,15 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amsfonts}
+\usepackage{lastpage}
 \usepackage{sectsty}
+\usepackage{minted}
 \usepackage{tikz}
 \usepackage[pdftex]{hyperref}
 
 
 % --- Metadata ---
-\newcommand{\hmwkTitle}{HW 1 - Problem 1}
+\newcommand{\hmwkTitle}{HW \#2}
 \newcommand{\hmwkAuthor}{flofriday}
 \newcommand{\hmwkDueDate}{06.10.2020}
 \newcommand{\hmwkSubject}{Statistics and Probability}
@@ -26,6 +28,15 @@
 }
 \author{\hmwkAuthor}
 \date{Duedate: \hmwkDueDate} 
+
+% --- Code Setup ---
+\setmonofont{JetBrains Mono}[SizeFeatures={Size=9},Contextuals=Alternate]
+\definecolor{solarizedbg}{HTML}{fdf6e3}
+\newminted{R}{
+    style=solarized-light,
+    breaklines=true,
+    bgcolor=solarizedbg
+}
 
 % --- Hyperref Setup ---
 \hypersetup{
@@ -47,7 +58,7 @@
 \lhead{\hmwkAuthor}
 \chead{\hmwkSubject: \hmwkTitle}
 \rhead{\firstxmark}
-\cfoot{Seite \thepage\ von \pageref{LastPage}}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
 \renewcommand\headrulewidth{0.4pt}
 \renewcommand\footrulewidth{0.4pt}
 \setlength\parindent{0pt}
@@ -62,6 +73,7 @@
 
 \graphicspath{ {./} }
 
+% --- Custom commands for this exercise ---
 
 % --- Begin Document ---
 \begin{document}
@@ -73,33 +85,77 @@
 
 % - Problem Pages -
 
-\subsection*{Problem 1a)}
+\section*{1) Bonferroni's inequality}
+\extramarks{1) Bonferroni's inequality}\\
 Describe the problem of this task
 
-%\textsf{\textbf{Solution}}\\
-\subsubsection*{Solution}
+\subsection*{1a)}
+Descibe the subproblem of this task
+
+\subsubsection*{Solution)}
 My Solution for this task
 
-\vspace{0.5cm}
+\pagebreak
 
-\subsection*{Problem 1b)}
+\section*{2}
+\extramarks{2}\\
 Describe the problem of this task
 
-%\textsf{\textbf{Solution}}\\
-\subsubsection*{Solution}
+\subsection*{1a)}
+Descibe the subproblem of this task
+
+\subsubsection*{Solution)}
 My Solution for this task
 
-\vspace{0.5cm}
+\pagebreak
 
-\subsection*{Problem 1c)}
+\section*{3}
+\extramarks{3}\\
 Describe the problem of this task
 
-%\textsf{\textbf{Solution}}\\
-\subsubsection*{Solution}
+\subsection*{1a)}
+Descibe the subproblem of this task
+
+\subsubsection*{Solution)}
 My Solution for this task
 
-\vspace{0.5cm}
+\pagebreak
+
+\section*{4}
+\extramarks{4}\\
+Describe the problem of this task
+
+\subsection*{1a)}
+Descibe the subproblem of this task
+
+\subsubsection*{Solution)}
+My Solution for this task
+
+\pagebreak
+
+\section*{5}
+\extramarks{5}\\
+Describe the problem of this task
+
+\subsection*{1a)}
+Descibe the subproblem of this task
+
+\subsubsection*{Solution)}
+My Solution for this task
+
+\pagebreak
+
+\section*{6}
+\extramarks{6}\\
+Describe the problem of this task
+
+\subsection*{1a)}
+Descibe the subproblem of this task
+
+\subsubsection*{Solution)}
+My Solution for this task
+
+\pagebreak
 
 
-\label{LastPage}
 \end{document}

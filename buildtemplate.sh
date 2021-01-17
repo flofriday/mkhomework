@@ -11,9 +11,9 @@ math-de.tmp
 # A simple script to build the template
 mkhomework \
 -subject "Statistics and Probability" \
--title "HW 1 - Problem 1" \
+-title "HW #2" \
 -author flofriday \
 -duedate 06.10.2020 \
--tasks "1a), 1b), 1c)" \
+-tasks "1) Bonferroni's inequality, 2, 3, 4, 5, 6" \
 -output examples/ws.tex \
 ws.tmp
