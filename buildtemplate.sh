@@ -17,3 +17,14 @@ mkhomework \
 -tasks "1) Bonferroni's inequality, 2, 3, 4, 5, 6" \
 -output examples/ws.tex \
 ws.tmp
+
+# The artificial inteligent homework
+mkhomework \
+-subject "Einführung in Künstliche Intelligenz" \
+-title "HW #1" \
+-author flofriday \
+-duedate 06.10.2020 \
+-tasks "Exercise 1.1, Exercise 1.2, Exercise 1.3" \
+-output examples/ai.tex \
+ai.tmp
+ 

@@ -1,0 +1,101 @@
+\documentclass[oneside]{article}
+\usepackage[a4paper, margin=3cm, top=4cm]{geometry}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{fontspec}
+\usepackage[parfill]{parskip}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{lastpage}
+\usepackage{sectsty}
+\usepackage{minted}
+\usepackage{tikz}
+\usepackage[pdftex]{hyperref}
+
+
+% --- Metadata ---
+\newcommand{\hmwkTitle}{[[.Title]]}
+\newcommand{\hmwkAuthor}{[[.Author]]}
+\newcommand{\hmwkDueDate}{[[.DueDate]]}
+\newcommand{\hmwkSubject}{[[.Subject]]}
+
+\title{
+    \textsf{\textbf{\hmwkSubject: \hmwkTitle}}
+}
+\author{\hmwkAuthor}
+\date{Duedate: \hmwkDueDate} 
+
+% --- Code Setup ---
+\setmonofont{JetBrains Mono}[SizeFeatures={Size=9},Contextuals=Alternate]
+\definecolor{solarizedbg}{HTML}{fdf6e3}
+\newminted{R}{
+    style=solarized-light,
+    breaklines=true,
+    bgcolor=solarizedbg
+}
+
+% --- Hyperref Setup ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={\hmwkTitle},
+    pdfauthor={\hmwkAuthor},
+    pdfsubject={\hmwkSubject},
+    pdfkeywords={\hmwkAuthor;\hmwkSubject;\hmwkTitle}
+}
+
+% --- Page Setup ---
+\linespread{1.1}
+\allsectionsfont{\bfseries\sffamily}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthor}
+\chead{\hmwkSubject: \hmwkTitle}
+\rhead{\firstxmark}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+\setlength\parindent{0pt}
+
+\fancypagestyle{firststyle}
+{
+   \renewcommand\headrulewidth{0pt}
+   \renewcommand\footrulewidth{0.4pt}
+   \fancyhf{}
+   \cfoot{Page \thepage\ of \pageref{LastPage}}
+}
+
+\graphicspath{ {./} }
+
+% --- Custom commands for this exercise ---
+
+% --- Begin Document ---
+\begin{document}
+
+% - Title Page -
+\maketitle
+\thispagestyle{firststyle}
+\vspace{1cm}
+
+% - Problem Pages -
+[[range .Tasks]]
+\section*{[[.]]}
+\extramarks{[[.]]}\\
+Describe the problem of this task
+
+
+\subsubsection*{Solution}
+% \subsubsection*{Part One}
+% \subsubsection*{Part Two}
+My Solution for this task
+
+\pagebreak
+[[end]]
+
+\end{document}
